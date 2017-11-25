@@ -1,0 +1,63 @@
+body{background: url(body_bg.jpg) repeat-x;height: 2000px;}
+*{margin: 0;padding: 0;}
+.wp{margin: 0 auto;}
+.z{float: left;}
+.y{float: right;}
+.cl{float: both;}
+.cl0{text-decoration: none;}
+.cl1{list-style: none;}
+.top{width: 990px;height: 46px; background: url(mainnav_bg.gif) repeat-x;margin-top: 15px;}
+
+
+.zhong li{width: 135px;height: 46px;float: left;}
+.zhong a{color: #576267;
+    font-size: 14px;
+    display: block;
+    width: 135px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    background: url(main_line.gif) no-repeat;}
+
+.zhong a:hover{background: url(green_bg.jpg) no-repeat;}
+.cl1{margin-left: 20px;}
+
+
+.aa{width: 250px;height:60px;line-height: 40px;margin-right: -30px;}
+.aa a{color:#979693;font-size: 13px;text-decoration: none;}
+.aa img{margin-left: 12px;}
+.aa .lvse:hover{color: green;}
+
+
+.bb img{margin: 10px 0 -6px; 0;}
+.bb input{margin-left:-172px ;border: none;width: 128px;height: 20px;}
+
+
+
+
+.ulike{width: 990px;height: 470px;margin: 0 auto;}
+/*利用浏览器的强大的调试工具*/
+.rec{width: 990px;margin-top: 30px;}
+.wenti{background: url(main_bg.jpg);margin-top: 60px;}
+.sh a{color: black;}
+.sh{height: 20px;margin-bottom: 10px;}
+
+
+.xia{border: solid 1px;}
+.a{width: 238px;height: 302px;border: 1px solid #E1E1E1; float: left;}
+.a img{width: 160px;height: 160px;margin: 40px 40px;}
+.a p,a{width: 180px;margin: 0 auto;line-height: 23px;color: #979693;font-size: 14px;}
+.a a{margin-left: 28px;}
+
+/*当位置摆放不对但是用margin调试不管用时，考虑将上上一个元素的高度设置为一个定值*/
+.rec{margin-bottom: : 50px;height: 340px;}
+
+
+.img{width: 990px;height: 50px; margin: 15px auto 0 auto;}
+
+
+
+.center{margin-bottom: 50px;}
+.footer{height: 50px;width: 500px;text-align:center;margin: 0 auto;}
+.footer p{color: #999999;font-size: 13px;} 
+

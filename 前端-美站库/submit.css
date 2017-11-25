@@ -1,0 +1,20 @@
+
+/*提交*/
+.zuo input,textarea{display: block; margin: 3px 0 10px 0;}
+.zuo p{font-size: 18px;color: black;margin: 30px 0 30px 0;}
+
+.zuo form label{font-size: 14px;color: #555555;}
+
+.anniu button{display: block;
+    width: 103px;
+    height: 27px;
+    text-align: center;
+    line-height: 27px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    background: url(default.png) no-repeat;
+    cursor: pointer;
+    float: left;
+    margin: 10px 50px 0 0
+}

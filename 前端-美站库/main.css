@@ -1,0 +1,25 @@
+h2{font-weight: normal;}
+.z_t p{font-size: 13px;font-weight: normal;}
+.z_t a{color: #0074C5;}
+.z_t a:hover{text-decoration: underline;}
+
+.z_b li{width: 284px;height: 184px;float: left;border: 1px solid #D5D7CA;margin: 10px 80px 20px -40px;}
+.z_b img{width: 270px ;height:130px;margin: 6px 5px 0 6px;}
+.z_b ul{margin-left: 0}
+
+.z_b p{font-weight: bold;margin-left: 10px;}
+
+
+.z_b{height: 740px;}
+.bu{ width:500px;height: 27px;margin: 0 0 0 0 ;}
+.bu button{    display: block;
+    width: 103px;
+    height: 27px;
+    text-align: center;
+    line-height: 27px;
+    color: white;
+    font-weight: bold;
+    border: none;
+background: url(default.png) no-repeat;margin-bottom: 10px;margin-left: 0}
+.bu button:hover{ background: url(d_hover.png) no-repeat;border: none;display: block;}
+/*当便签位于该在的位置之上时考虑是否前面同等级的标签未设定高度*/

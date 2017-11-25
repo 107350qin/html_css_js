@@ -1,0 +1,84 @@
+.*{border: 0; margin: 0;padding:0;}
+img{border: 0}
+a{text-decoration: none;}
+ul{list-style: none;}
+.cent{margin: 0 auto;}
+.z{float: left;}
+.y{float: right;}
+.cl{float: both;}
+.header{background: url(top_bg.jpg) repeat-x;height: 452px;}
+.main{height: 900px;width: 920px;}
+.center{background: url(main_top_bg.jpg) repeat-x;}
+.centerr{background: url(main1_bottom_bg.jpg) repeat-x 0px bottom;}
+
+.footer{height: 100px; background: url(footer_bg.jpg) repeat-x;}
+
+
+
+.top{height: 100px;width: 980px;}
+.logo{width: 291px;height: 42px;margin: 25px 0 0 25px;}
+.logo span{color: #CCCCCC;font-size:14px;font-weight: bold;padding-bottom: 10px;}
+.search{width: 250px;height: 150px;margin: 30px 60px 0 0}
+/*像p这样的标签不能直接只用margin,要放在容器中才能使用，如div和span*/
+.text{width: 180px;height: 15px;background: #161B1F;color: #BCBCBC;border: 1px solid #0B0E10;padding:5px;}
+.but{width: 80px;height: 28px;cursor: pointer;margin: -27px 0 50px 50px;}
+/*margin使用时可以使用再浏览器中调试看看*/
+
+
+.nav{width: 980px; height: 50px;}
+.nav a{color: black;font-size: 13px;font-weight: bold;width: 103px;
+	height: 27px;text-align: center;line-height: 27px;margin: 0 0 0 0;padding-right: 50px;display: block;float: left;}
+.nav{margin:10px 0 0 210px;}
+/*分配了大小的标签才能用margin*/
+
+.nav a:hover{background: url(hover.png) no-repeat;width: 103px;height: 27px;}
+
+
+
+.runplay{width: 980px;height: 301px;background: url(runplay_bg.jpg) no-repeat;}
+.page{width: 300px;height: 150px;margin: 50px 100px 0 30px;}
+
+
+
+.tex dt{font-size: 24px;color: white;margin: 0 0 20px 0;}
+.tex dd{display: block;color: white;}
+.tex dd button{    display: block;
+    width: 103px;
+    height: 27px;
+    text-align: center;
+    line-height: 27px;
+    color: white;
+    font-weight: bold;
+    border: none;
+background: url(default.png) no-repeat;}
+.tex dd button:hover{ background: url(d_hover.png) no-repeat;border: none;display: block;}
+
+dd{margin: 0 0 20px 0;}
+
+dl{margin: 35px 0 0 0;}
+
+.zuo{width: 700px;height: 900px;}
+.you{width: 220px;height: 900px;}
+
+
+.shang .i a{text-decoration: underline;color: #0074C5;font-weight: normal;}
+.shang .i a:hover{color: green;}
+.i{border-bottom: 1px dashed #000}
+
+.xia{margin-top: 50px;}
+.one .zuobian{line-height: 5px;}
+.two .zuobian{line-height: 5px;margin-top: 40px;}
+.two .youbian{margin-left: 50px;}
+
+.xia{height: 150px;line-height: 100px;}
+
+
+
+
+.last a{text-decoration: underline;margin-right: 20px;color: white;}
+.last p1{color: white;padding-top: 15px;}
+.last p{    text-align: center;
+    color: #ffffff;
+    line-height: 100%;}
+.footer{padding-top: 0px;}
+.last{padding-top: 15px;}

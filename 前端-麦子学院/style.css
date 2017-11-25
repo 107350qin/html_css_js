@@ -1,0 +1,125 @@
+*{padding: 0;margin:0;}
+body{ font: 14px/24px 'Microsoft YaHei', '宋体’.'"Helvetica Neue", Helvetica, Arial, sans-serif'' }
+.z{float: left;}
+.y{float: right;}
+.cl{float: both;}
+.wp{width: 960px;margin: 0 auto;}
+
+.top{width: 100%;
+height: 24px;
+line-height: 24px;
+background:#303030;
+color: #d8d8d8;
+}
+.z a{text-decoration: none;
+color: #d8d8d8;}
+.wp span{margin: 0 10px;}
+.z a:hover{color: #f60;}
+.yy{margin: 0}
+
+
+.sousuo{width: 350xp;height: 41px;
+}
+.sousuo td{height: 41px;}
+
+.s_z{background:url("s_z.jpg") no-repeat;width: 6px;}
+.s_c{background:url("s_c.jpg") repeat-x;width: 250px;}
+.s_y{background:url("s_r.jpg") no-repeat;width: 78px;}
+input{width: 200px;height: 30px;margin-top: 5px;border:none;}
+
+.logo{margin:15px 0 0 15px;}
+.sousuo{margin:20px 0 0 40px;}
+.dianhua p{color: darkred;font-size:26px;margin-top:28px;margin-left: 26px;}
+
+
+.nav{width: 100%;
+	height: 40px;
+	background:url("nav_bg.jpg") repeat-x;margin-top: 88px;
+}
+
+.nav ul{list-style: none;}
+.nav a{line-height: 34px; ; color:white;float: left;font-size:20px;letter-spacing: 3px; text-decoration: none;margin: 5px 10px 0px 12px;}
+.first a{margin-left: 0;
+background:url("nav_hover.jpg") repeat-x;}
+.last{margin-right: 0}
+.nav a:hover{background:url("nav_hover.jpg") repeat-x;
+}
+
+
+.jianjie{width: 500px;height: 350px;}
+.jianjie img{margin: 5px 15px 5px 0;}
+.s{height: 60px;}
+.s a{font-size: 15px;padding-top:50px;text-decoration: none;}
+.s span{margin-top: 35px;}
+.x p{display: block;text-indent: 24px;margin:5px 0 0 5px;}
+.x img{float: left;}
+
+.xinwen{width: 450px;height: 350px;margin-left: 10px;}
+.ss img{margin-left: 5px;margin: 5px 15px 5px 5px;}
+.ss span{margin-top: 34px;}
+.ss {height: 60px; }
+/*div必须给定大小！！！！！！！！！*/
+
+.biao img{margin:5px 15px 15px 0;}
+.biao li{float: both}
+.fir{float:left;}
+
+
+
+
+.biao a{font-size: 14px;color: black;}
+.aaa{margin-bottom: 15px;}
+.jj{margin-top: 15px; float: both;list-style: none;}
+.jj p{float: left;margin-left: 20px;line-height: 33px;background: url(list_bg.jpg) no-repeat; background-position: 0px 13px;text-indent: 24px;}
+.jj span{float: right;}
+/*当list-style位置不够时可以先将文本缩进再设置背景*/
+
+
+
+.chanpin{width: 100%;height: 500px;float: left;}
+.sp{margin-top: 60px;}
+.chanpin hr{margin-top: 110px;}
+.sp a{text-decoration: none;}
+.sp span{margin-top: 26px;}
+
+.xx li{
+    float: left;
+    list-style: none;
+    margin: 0 10px 10px 0;
+    width: 148px;
+    height: 96px;
+    overflow: hidden;
+    position: relative;
+}
+.xx span{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: -10px;
+    font-size: 14px;
+    height: 20px;
+    width: 131px;
+    padding: 0 10px;
+    color: #fff;
+    background: darkred;
+    overflow: hidden;
+    margin-right: 0;
+}
+.xx li a:hover span{
+    display: block;
+}
+.xx li img{
+    float: left;
+}
+.xx li.mr_0{
+    margin-right: 0;
+}
+.xx{margin-top: 20px;}
+
+
+
+
+
+.footer{background: url("footer_bg.jpg") repeat-x;margin-top: 820px;width: 100%;height: 103px;}
+
+.co{color: white;}
