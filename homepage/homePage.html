@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>homePage</title>
+    <link rel="stylesheet" href="homepage.css"/>
+</head>
+<body>
+<!--头部-->
+<div id="header">
+    <!--logo部分-->
+    <div id="logo">
+        <img src="images/logo.jpg">
+    </div>
+    <!--栏目部分-->
+    <div id="nav">
+        <div>
+            <a href="">
+                <div>首页</div>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <div>java培训</div>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <div>网络营销培训</div>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <div>UI设计培训</div>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <div>平面设计培训</div>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <div>联系我们</div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!--显示海报大图部分-->
+<div id="showHomeImage">
+    <!--大图-->
+    <div id="homeLeft">
+        <div id="homeContent">
+            <div><img src="images/content1.png" alt=""/></div>
+            <div><img src="images/content2.png" alt=""/></div>
+        </div>
+        <div id="yi">
+            <img src="images/contenttop1.png" alt="" id="yiImg"/>
+        </div>
+        <div id="er">
+            <img src="images/contenttop1.png" alt="" id="erImg"/>
+        </div>
+    </div>
+    <!--蒙板-->
+    <div id="homeRight">
+        <img src="images/rightIcon.png" alt="" onclick="next()"/>
+    </div>
+</div>
+
+<!--学校信息介绍-->
+<div id="info">
+    <div id="infoTop">成都火才培训</div>
+    <div id="infoBut">
+        <div id="infoLeft">
+            <img src="images/infoLeft.png" alt=""/>
+            <h6>正规培训学校</h6><br/>
+
+            <p>经教育局层层审批，正式颁</p><br/>
+
+            <p>教学资格证书</p><br/>
+        </div>
+        <div id="infoMid">
+            <img src="images/infoMid.png" alt=""/>
+            <h6>师资力量充足</h6><br/>
+
+            <p>曾任百度，IBM等著名企业</p><br/>
+
+            <p>主管，5年以上实战经验</p><br/>
+        </div>
+        <div id="infoRight">
+            <img src="images/infoRight.png" alt=""/>
+            <h6>行业口碑前三</h6><br/>
+
+            <p>高薪就业率90%,行业口碑</p><br/>
+
+            <p>超过其他传统培训</p><br/>
+        </div>
+    </div>
+</div>
+
+<!--显示老师的信息-->
+<div id="teacher">
+    <div id="teacherColor">
+        <div id="showTeacher">
+            <div id="teacherContent">
+                <div class="the" onmouseover="stopShowTeacher1()" onmouseout="startShowTeacher1()">
+                    <div style="background-image: url(images/teacher1.png)">
+                        <p id="teacherP1">王璞玉，毕业于北京大学，从事软件开发领域15年，精通JAVA，JavaScript，C，C++，C#等多种编程语言，曾在上海某JAVA培训工作9年。</p>
+                    </div>
+                    <h6>王璞玉</h6>
+                </div>
+                <div class="the" onmouseover="stopShowTeacher2()" onmouseout="startShowTeacher2()" id="t2">
+                    <div style="background-image: url(images/teacher2.png)">
+                        <P id="teacherP2">王梓静，曾就职于百度，在百度有10年搜索营销经验，曾带领团队、培训新员工，做事经验丰富。</P>
+                    </div>
+                    <h6>王梓静</h6>
+                </div>
+                <div class="the" onmouseover="stopShowTeacher3()" onmouseout="startShowTeacher3()">
+                    <div style="background-image: url(images/teacher3.png)">
+                        <P id="teacherP3">吴迪，电子科技大学毕业，java讲师，精通JAVA，C++等主流计算机语言，有5年以上编程经验。</P>
+                    </div>
+                    <h6>吴迪</h6>
+                </div>
+                <div class="the" onmouseover="stopShowTeacher4()" onmouseout="startShowTeacher4()">
+                    <div style="background-image: url(images/teacher4.png)">
+                        <P id="teacherP4">张坤，电子科技大学毕业，JAVA工程师，有5年以上JAVA开发经验，曾担任国信安JAVA讲师，精通JAVA、JAVAScript。</P>
+                    </div>
+                    <h6>张坤</h6>
+                </div>
+                <div class="the" onmouseover="stopShowTeacher5()" onmouseout="startShowTeacher5()">
+                    <div style="background-image: url(images/teacher5.png)">
+                        <P id="teacherP5">陈科志，北京大学美术学院研究生毕业，UI设计讲师，拥有5年UI设计讲师经验。</P>
+                    </div>
+                    <h6>陈科志</h6>
+                </div>
+                <div class="the" onmouseover="stopShowTeacher6()" onmouseout="startShowTeacher6()">
+                    <div style="background-image: url(images/teacher1.png)">
+                        <p id="teacherP6">王璞玉，毕业于北京大学，从事软件开发领域15年，精通JAVA，JavaScript，C，C++，C#等多种编程语言，曾在上海某JAVA培训工作9年。</p>
+                    </div>
+                    <h6>王璞玉</h6>
+                </div>
+                <div class="the" onmouseover="stopShowTeacher7()" onmouseout="startShowTeacher7()">
+                    <div style="background-image: url(images/teacher2.png)">
+                        <P id="teacherP7">王梓静，曾就职于百度，在百度有10年搜索营销经验，曾带领团队、培训新员工，做事经验丰富。</P>
+                    </div>
+                    <h6>王梓静</h6>
+                </div>
+                <div class="the" onmouseover="stopShowTeacher8()" onmouseout="startShowTeacher8()">
+                    <div style="background-image: url(images/teacher3.png)">
+                        <P id="teacherP8">吴迪，电子科技大学毕业，java讲师，精通JAVA，C++等主流计算机语言，有5年以上编程经验。</P>
+                    </div>
+                    <h6>吴迪</h6>
+                </div>
+                <div class="the" onmouseover="stopShowTeacher9()" onmouseout="startShowTeacher9()">
+                    <div style="background-image: url(images/teacher4.png)">
+                        <P id="teacherP9">张坤，电子科技大学毕业，JAVA工程师，有5年以上JAVA开发经验，曾担任国信安JAVA讲师，精通JAVA、JAVAScript。</P>
+                    </div>
+                    <h6>张坤</h6>
+                </div>
+                <div class="the" onmouseover="stopShowTeacher10()" onmouseout="startShowTeacher10()">
+                    <div style="background-image: url(images/teacher5.png)">
+                        <P id="teacherP10">陈科志，北京大学美术学院研究生毕业，UI设计讲师，拥有5年UI设计讲师经验。</P>
+                    </div>
+                    <h6>陈科志</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--显示滑块-->
+<div id="lesson">
+    <!--market模块-->
+    <div id="market">
+        <div id="marketLeft">
+            <p>网络营销</p>
+        </div>
+        <div id="marketShow">
+            <div id="marketContent" onload="slideRight()">
+                <div class="marketDiv">
+                    <h6>SEO</h6>
+
+                    <p>&nbsp;&nbsp;&nbsp;<img src="images/small1.png" alt=""/>seo经理，seo主管</p>
+                </div>
+                <div class="marketDiv">
+                    <h6>SEM</h6>
+
+                    <p><img src="images/small1.png" alt=""/>sem推广专员，sem主管</p>
+                </div>
+                <div class="marketDiv">
+                    <h6>电商</h6>
+
+                    <p><img src="images/small1.png" alt=""/>电商运营专员，电商管理</p>
+                </div>
+                <div class="marketDiv">
+                    <h6>新媒体</h6>
+
+                    <p><img src="images/small1.png" alt=""/>新媒体运营，新媒体经理</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--ui模块-->
+    <div id="ui">
+        <div id="uiShow">
+            <div class="uiDiv1">
+                <h6>AUI创意手绘</h6>
+
+                <div id="uiDivFirstP"><img src="images/small2.png" alt=""/>UI图标设计师</div>
+            </div>
+            <div class="uiDiv2">
+                <h6>MUI多界面设计</h6>
+
+                <div id="uiDivSecondP"><img src="images/small2.png" alt=""/>界面设计工程师，交互设计工程师</div>
+            </div>
+            <div class="uiDiv3">
+                <h6>WUI网站建设</h6>
+
+                <div id="uiDivThirdP"><img src="images/small2.png" alt=""/>web设计工程师</div>
+            </div>
+        </div>
+        <div id="uiRight">
+            <p>U I设计</p>
+        </div>
+    </div>
+
+    <!--code模块-->
+    <div id="code">
+        <div id="codeLeft">
+            <p>JAVA编程</p>
+        </div>
+        <div id="codeShow">
+            <div id="codeContent">
+                <div class="codeDiv">
+                    <h6>网站后台，AI开发</h6>
+
+                    <p>&nbsp;&nbsp;<img src="images/small1.png" alt=""/>JAVA高级工程师</p>
+                </div>
+                <div class="codeDiv">
+                    <h6>大数据</h6>
+
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/small1.png" alt=""/>大数据工程师</p>
+                </div>
+                <div class="codeDiv">
+                    <h6>web页面开发</h6>
+
+                    <p>&nbsp;&nbsp;&nbsp;<img src="images/small1.png" alt=""/>前端开发工程师</p>
+                </div>
+                <div class="codeDiv">
+                    <h6>服务器后台</h6>
+
+                    <p>&nbsp;<img src="images/small1.png" alt=""/>服务器维护工程师</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--design模块-->
+    <div id="design">
+        <div id="designShow">
+            <div class="second1">
+                <h6>平面构成</h6>
+            </div>
+            <div class="second2">
+                <h6>板式布局设计</h6>
+            </div>
+            <div class="second3">
+                <h6>web前端设计</h6>
+            </div>
+            <p><img src="images/small1.png" alt=""/>平面设计总监，资深平面设计师</p>
+        </div>
+        <div id="designRight">
+            <p>平面设计</p>
+        </div>
+    </div>
+</div>
+
+<!--十个小方块-->
+<div id="end">
+    <div id="pic1">
+        <img src="images/end1.png" alt=""/>
+
+        <div>
+            <p>学习环境</p>
+        </div>
+    </div>
+    <div id="pic2">
+        <img src="images/end2.png" alt=""/>
+
+        <div>
+            <p>一人一桌</p><br/>
+
+            <p>两个电脑位</p>
+        </div>
+    </div>
+    <div id="pic3"><img src="images/end3.png" alt=""/></div>
+    <div id="theOne">
+        <div>
+            <p>小班教学</p><br/>
+
+            <p>教师学生零距离</p>
+        </div>
+    </div>
+    <div id="theTwo">
+        <div>
+            <p>腾讯大厦</p><br/>
+
+            <p>顶级写字楼</p>
+        </div>
+    </div>
+    <div id="theThree">
+        <div>
+            <p>科技园区</p><br/>
+
+            <p>技术大牛在身边</p>
+        </div>
+    </div>
+    <div id="theFour">
+        <div>
+            <p>标配电脑</p><br/>
+
+            <p>轻装上阵</p>
+        </div>
+    </div>
+    <div id="theFive"></div>
+    <div id="theSix"></div>
+    <div id="theSeven"></div>
+</div>
+
+<!--footer部分-->
+<div id="footer">
+    <div id="footTop">
+        <div>
+            <p>腾讯、微软等近10000家企业招聘合作</p>
+        </div>
+    </div>
+    <div id="footBottom">
+        <div id="theFootBottomP">
+            <p>书山有路勤为径，我们期待好学的你</p>
+        </div>
+        <div>
+            <p>联系方式：028-65225219</p><br/>
+
+            <p>联系邮箱：0000000000@qq.com</p><br/>
+
+            <p>公司地址：成都天府三街腾讯</p><br/>
+        </div>
+    </div>
+</div>
+
+<script src="homepage.js"></script>
+</body>
+</html>

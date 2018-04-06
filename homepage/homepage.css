@@ -1,0 +1,680 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Microsoft YaHeiLight, sans-serif;
+}
+
+/*header部分*/
+#header {
+    width: 1500px;
+    height: 102px;
+}
+
+#logo {
+    margin-left: 285px;
+}
+
+#logo img {
+    width: 132px;
+    height: 60px;
+    margin-top: 22px;
+}
+
+#nav {
+    margin-left: 660px;
+    margin-top: -45px;
+}
+
+#nav div {
+    float: left;
+    font-size: 18px;
+    color: #b5b5b5;
+    margin-right: 20px;
+}
+
+#nav div:hover {
+    color: green;
+}
+
+/*显示大图*/
+#showHomeImage {
+    width: 1500px;
+    height: 720px;
+    position: relative;
+}
+
+/*显示图片*/
+#homeLeft img {
+    width: 1400px;
+    height: 720px;
+    float: left;
+}
+
+#homeLeft {
+    width: 1400px;
+    height: 720px;
+    overflow: hidden;
+    margin-left: 90px;
+}
+
+#yi {
+    position: absolute;
+    left: 600px;
+    margin-top: -520px;
+    display: block;
+}
+
+#yi img {
+    width: 450px;
+    height: 300px;
+}
+
+#er {
+    position: absolute;
+    left: 600px;
+    margin-top: -520px;
+    display: none;
+}
+
+#er img {
+    width: 450px;
+    height: 300px;
+}
+
+#homeContent {
+    width: 2800px;
+    height: 720px;
+}
+
+#homeRight {
+    width: 50px;
+    height: 720px;
+    position: absolute;
+    left: 1440px;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#homeRight:hover {
+    display: block;
+    background-color: rgba(134, 142, 123, 0.5);
+}
+
+#homeRight img {
+    margin-top: 340px;
+    cursor: pointer;
+}
+
+/*info部分*/
+#info {
+    width: 1550px;
+    height: 350px;
+}
+
+#infoTop {
+    height: 130px;
+    font-size: 30px;
+    color: #8aae92;
+    text-align: center;
+    line-height: 130px;
+}
+
+#infoBut div {
+    float: left;
+    margin-left: 240px;
+}
+
+#infoBut h6 {
+    font-size: 18px;
+    color: #bbcfbf;
+    margin-top: 20px;
+}
+
+#infoBut p {
+    font-size: 16px;
+    color: #cfcfcf;
+    line-height: 12px;
+}
+
+/*显示老师的图片*/
+#teacher {
+    width: 100%;
+    height: 800px;
+    /*margin-left: 100px;*/
+    margin-top: 10px;
+}
+
+#teacherColor {
+    background-color: #c4e3cb;
+    width: 100%;
+    height: 800px;
+}
+
+#showTeacher {
+    width: 100%;
+    height: 715px;
+    overflow: hidden;
+}
+
+#teacherContent {
+    width: 3400px;
+    height: 700px;
+}
+
+#teacherContent div div {
+    width: 300px;
+    height: 550px;
+    position: relative;
+}
+
+#teacherContent p {
+    font-size: 18px;
+    color: rgba(242, 201, 62, 1);
+    text-align: left;
+    width: 140px;
+    height: 70px;
+    position: absolute;
+    display: none;
+    padding: 240px 80px;
+}
+
+.the {
+    margin: 90px 20px;
+    width: 300px;
+    height: 700px;
+    float: left;
+}
+
+#teacherContent h6 {
+    font-size: 18px;
+    color: rgba(112, 117, 113, 0.8);
+    margin-left: 130px;
+    margin-top: 40px;
+}
+
+/* lesson*/
+#lesson p {
+    font-size: 30px;
+    width: 60px;
+    margin: 50px 60px;
+    color: white;
+}
+
+#uiRight p {
+    color: #4a4a4a;
+}
+
+#codeLeft p {
+    margin-left: 260px;
+}
+
+#designRight p {
+    color: #4a4a4a;
+}
+
+/*网络营销*/
+#market {
+    margin-left: 200px;
+    margin-top: 80px;
+}
+
+#marketLeft {
+    float: left;
+    width: 190px;
+    height: 190px;
+    background-color: #8aae92;
+}
+
+#marketShow {
+    float: left;
+    width: 760px;
+    height: 190px;
+    overflow: hidden;
+    position: relative;
+    background-image: url("images/04拷贝.png");
+    background-color: rgba(138, 174, 146, 0.05);
+}
+
+#marketContent {
+    width: 765px;
+    height: 190px;
+    position: absolute;
+    left: -765px;
+}
+
+.marketDiv {
+    width: 188px;
+    height: 140px;
+    float: left;
+    border-left: 1px solid #cfe8d5;
+    padding-top: 50px;
+}
+
+.marketDiv img {
+    margin-bottom: -5px;
+}
+
+#lesson .marketDiv p {
+    font-size: 14px;
+    width: 180px;
+    color: #616161;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+
+#lesson .marketDiv h6 {
+    font-size: 18px;
+    color: #8aae92;
+    text-align: center;
+}
+
+#ui {
+    clear: both;
+}
+
+/*包含三个*/
+#uiShow {
+    width: 760px;
+    height: 190px;
+    float: left;
+    background: url("images/03.png") center no-repeat;
+    background-color: rgba(255, 250, 235, 0.8);
+
+    margin-left: 390px;
+    margin-top: 20px;
+}
+
+#uiShow img {
+    margin-bottom: -3px;
+}
+
+.uiDiv1 {
+    width: 230px;
+    height: 120px;
+    border-right: 1px solid #cfe8d5;
+    float: left;
+    margin-top: 35px;
+}
+
+.uiDiv2 {
+    width: 240px;
+    height: 120px;
+    border-right: 1px solid #cfe8d5;
+    float: left;
+    margin-top: 35px;
+    margin-left: 70px;
+
+}
+
+.uiDiv3 {
+    width: 104px;
+    height: 110px;
+    float: left;
+    margin-top: 35px;
+    margin-left: 110px;
+}
+
+#uiRight {
+    width: 250px;
+    height: 190px;
+    background-color: #ffdd67;
+    float: left;
+    margin-top: 20px;
+}
+
+#uiDivFirstP {
+    margin-left: 25px;
+    margin-top: 30px;
+    color: rgb(150, 148, 143);
+}
+
+#uiDivSecondP {
+    margin-left: -43px;
+    margin-top: 30px;
+    color: rgb(150, 148, 143);
+}
+
+#uiDivThirdP {
+    margin-left: -43px;
+    margin-top: 30px;
+    color: rgb(150, 148, 143);
+}
+
+#uiShow h6 {
+    font-size: 18px;
+    color: rgba(234, 199, 61, 0.8);
+    text-align: center;
+    margin-top: 22px;
+    margin-left: -50px;
+
+}
+
+#code {
+    margin-left: 200px;
+    margin-top: 80px;
+    background-color: red;
+}
+
+#codeLeft {
+    float: left;
+    width: 390px;
+    height: 190px;
+    background-color: #8aae92;
+    margin-top: 20px;
+    margin-left: -200px;
+}
+
+#codeShow {
+    float: left;
+    width: 760px;
+    height: 190px;
+    overflow: hidden;
+    position: relative;
+    background-image: url("images/04拷贝.png");
+    background-color: rgba(138, 174, 146, 0.05);
+    margin-top: 20px;
+}
+
+#codeContent {
+    width: 765px;
+    height: 190px;
+    position: absolute;
+    left: -765px;
+}
+
+.codeDiv {
+    width: 188px;
+    height: 140px;
+    float: left;
+    border-left: 1px solid #cfe8d5;
+    padding-top: 50px;
+}
+
+.codeDiv img {
+    margin-bottom: -5px;
+}
+
+#lesson .codeDiv p {
+    font-size: 14px;
+    width: 170px;
+    color: #616161;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+#lesson .codeDiv h6 {
+    font-size: 18px;
+    color: #8aae92;
+    text-align: center;
+}
+
+#designShow {
+    width: 760px;
+    height: 190px;
+    float: left;
+    background: url("images/03.png") 10px center no-repeat;
+    background-color: rgba(255, 252, 240, 0.8);
+    margin-left: 390px;
+    margin-top: 20px;
+    position: relative;
+}
+
+#designShow img {
+    margin-bottom: -3px;
+}
+
+.second1 {
+    width: 233px;
+    height: 40px;
+    float: left;
+    text-align: center;
+    padding-top: 80px;
+    font-size: 18px;
+    color: #f2e1a3;
+    border-right: 1px solid #cfe8d5;
+    margin-top: 30px;
+}
+
+.second2 {
+    width: 310px;
+    height: 40px;
+    float: left;
+    text-align: center;
+    padding-top: 80px;
+    font-size: 18px;
+    color: #f2e1a3;
+    border-right: 1px solid #cfe8d5;
+    margin-top: 30px;
+}
+
+.second3 {
+    width: 201px;
+    height: 40px;
+    float: left;
+    text-align: center;
+    padding-top: 80px;
+    font-size: 18px;
+    color: #f2e1a3;
+    margin-top: 30px;
+}
+
+#designShow p {
+    display: inline;
+    color: rgba(142, 141, 137, 0.8);
+    font-size: 15px;
+    position: absolute;
+    left: 225px;
+    top: 120px;
+    width: 300px;
+}
+
+#designShow h6 {
+    font-size: 18px;
+    margin-top: -30px;
+    color: rgba(232, 186, 48, 0.7);
+
+}
+
+.second1 h6 {
+    margin-left: -60px;
+}
+
+.second3 h6 {
+    margin-left: 80px;
+}
+
+#designRight {
+    width: 340px;
+    height: 190px;
+    background-color: #ffdd67;
+    float: left;
+    margin-top: 20px;
+}
+
+#end {
+    clear: both;
+    width: 1475px;
+    height: 800px;
+    /*background-color: darkgrey;*/
+    margin-left: 90px;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+#pic1 img {
+    width: 750px;
+    height: 720px;
+}
+
+#pic1 {
+    position: absolute;
+    left: 0;
+    top: 80px;
+}
+
+#pic1 div {
+    margin-top: -500px;
+    margin-left: 100px;
+}
+
+#pic1 div p {
+    font-size: 50px;
+    color: white;
+    text-align: left;
+}
+
+#pic2 img {
+    width: 240px;
+    height: 240px;
+}
+
+#pic2 {
+    position: absolute;
+    left: 1150px;
+    top: 460px;
+}
+
+#pic2 div {
+    margin-top: -160px;
+    margin-left: 80px;
+}
+
+#pic2 div p {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: left;
+}
+
+#pic3 img {
+    width: 80px;
+    height: 80px;
+}
+
+#pic3 {
+    position: absolute;
+    left: 1200px;
+    top: 180px;
+}
+
+#theOne {
+    width: 240px;
+    height: 240px;
+    position: absolute;;
+    left: 580px;
+    top: 250px;
+    background-color: #e3dbc3;
+}
+
+#end p {
+    font-size: 16px;
+    text-align: center;
+    color: rgba(88, 87, 84, 0.8);
+    line-height: 13px;
+}
+
+#theOne div {
+    margin-top: 85px;
+}
+
+#theTwo {
+    width: 240px;
+    height: 240px;
+    position: absolute;
+    left: 865px;
+    top: 250px;
+    background-color: #ffdd67;
+}
+
+#theTwo div {
+    margin-top: 85px;
+}
+
+#theThree {
+    width: 240px;
+    height: 240px;
+    position: absolute;;
+    left: 865px;
+    top: 530px;
+    background-color: #c4e3cb;
+}
+
+#theThree div {
+    margin-top: 85px;
+}
+
+#theFour {
+    width: 130px;
+    height: 130px;
+    position: absolute;;
+    left: 1150px;
+    top: 288px;
+    background-color: #c4e3cb;
+}
+
+#theFour div {
+    margin-top: 40px;
+}
+
+#theFive {
+    width: 150px;
+    height: 255px;
+    position: absolute;;
+    left: 1325px;
+    top: 163px;
+    background-color: #c4e3cb;
+}
+
+#theSix {
+    width: 60px;
+    height: 80px;
+    position: absolute;;
+    left: 1415px;
+    top: 460px;
+    background-color: #c4e3cb;
+}
+
+#theSeven {
+    width: 60px;
+    height: 80px;
+    position: absolute;;
+    left: 1415px;
+    top: 565px;
+    background-color: #c4e3cb;
+}
+
+/*底部样式*/
+#footTop {
+    width: 100%;
+    height: 40px;
+    background-color: #c4e3cb;
+    padding-top: 40px;
+}
+
+#footBottom {
+    width: 100%;
+    height: 230px;
+
+    background-color: #8aae92;
+}
+
+#theFootBottomP {
+    padding-bottom: 30px;
+}
+
+#footTop p {
+    font-size: 18px;
+    color: rgba(96, 102, 97, 0.8);
+    text-align: center;
+}
+
+#footBottom p {
+    text-align: center;
+    font-size: 18px;
+    color: rgba(96, 102, 97, 0.8);
+    line-height: 7px;
+}
+
+#theFootBottomP p {
+    color: rgba(218, 229, 220, 0.8);
+    line-height: 100px;
+}

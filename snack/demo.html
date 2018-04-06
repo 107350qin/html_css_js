@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{margin: 0px;padding: 0px;}
+        h3{text-align: center;}
+    </style>
+    <script>
+        var k;//分数元素
+        var grade=0;//分数
+        var inter;//定时器
+        var direct = "top";
+        var food;//定义食物
+        var snake = [];//定义蛇的身体数组
+        var gameArea;//游戏区域
+        var textArea;//显示分数区域
+
+        window.onload = function (){
+            //创建游戏区域
+            gameArea = createDiv(600,400,0,0,"relative","#999998");
+            gameArea.style.margin = "0 auto";
+            document.body.appendChild(gameArea);
+            //显示分数的区域
+            textArea = createDiv(600,30,0,0,"relative","red");
+            textArea.style.margin = "0 auto";
+            document.body.appendChild(textArea);
+            //创建显示的文本元素并添加
+            k=document.createElement('h3');
+            k.textContent="grade:"+grade+'分';
+            textArea.appendChild(k);
+
+            //创建蛇头
+            var i=0;
+            var div0 = createDiv(10,10,(i+1)*10+300,200,"absolute",'#ff0000');
+            snake[i] = div0;
+            gameArea.appendChild(div0);
+            //创建蛇身
+            for(var i = 1;i < 10;i++){
+                var div = createDiv(10,10,(i+1)*10+300,200,"absolute","#ffffff");
+                snake[i] = div;
+                gameArea.appendChild(div);
+            }
+            //添加键盘事件控制蛇的移动
+            document.onkeydown = function (event){
+                var which = event.keyCode || event.which;
+                switch(which){
+                    case 37:
+                        direct = "left";
+                        break;
+                    case 38:
+                        direct = "top";
+                        break;
+                    case 39:
+                        direct = "right";
+                        break;
+                    case 40:
+                        direct = "buttom";
+                        break;
+                }
+            }
+
+            //创建食物
+            var x = parseInt(Math.random()*60)*10;
+            var y = parseInt(Math.random()*40)*10;
+            food = createDiv(10,10,x,y,"absolute","black");
+            gameArea.appendChild(food);
+
+            //让蛇移动起来（计时器）
+            inter = setInterval(function (){
+                move();
+            },100);
+
+        }
+
+        function move(){
+            //移动蛇的身体
+            for(var i = snake.length-1;i > 0; i--){
+                snake[i].style.left = snake[i-1].style.left;
+                snake[i].style.top = snake[i-1].style.top;
+            }
+
+            //获取蛇头的坐标
+            var left = snake[0].style.left;
+            var top = snake[0].style.top;
+            left = parseInt(left);
+            top = parseInt(top);
+
+            //撞墙了
+            if(left<=0 || left>=600 || top<=0 || top>=400){
+                clearInterval(inter);
+                alert('撞墙了额！！！');
+            }
+
+            //让蛇头移动
+            switch(direct){
+                case "left":
+                    snake[0].style.left = (left - 10)+"px";
+                    break;
+                case "right":
+                    snake[0].style.left = (left + 10)+"px";
+                    break;
+                case "top":
+                    snake[0].style.top = (top - 10)+"px";
+                    break;
+                case "buttom":
+                    snake[0].style.top = (top + 10)+"px";
+                    break;
+            }
+
+            //判断蛇是否吃到了食物
+            //蛇头的坐标
+            var left = parseInt(snake[0].style.left);
+            var top = parseInt(snake[0].style.top);
+
+            //食物的坐标
+            var left1 = parseInt(food.style.left);
+            var top1 = parseInt(food.style.top);
+            if(left == left1 && top == top1){
+                grade++;//分数增加
+                k.textContent='grade:'+grade+'分';
+
+                //蛇尾增加一个格子
+                var lastX = snake[snake.length-1].style.left;
+                var lastY = snake[snake.length-1].style.top;
+                lastX = parseInt(lastX);
+                lastY = parseInt(lastY);
+                //随机颜色
+                var jj='#';
+                for(var h=0;h<6;h++){
+                    jj=jj+parseInt(Math.random()*10);
+                }
+                var div = createDiv(10,10,lastX,lastY,"absolute",jj);
+                snake[snake.length] = div;
+                gameArea.appendChild(div);
+
+                //让食物改变位置
+                var x = parseInt(Math.random()*60)*10;
+                var y = parseInt(Math.random()*40)*10;
+                food.style.left = x+"px";
+                food.style.top = y+"px";
+            }
+
+            //注意位置
+            for(var j=snake.length-1;j>0;j--){
+                if(left==parseInt(snake[j].style.left) && top==parseInt(snake[j].style.top)){
+                    clearInterval(inter);
+                    alert('撞到自己喽~~~');
+                }
+            }
+        }
+
+
+        function createDiv(width,height,x,y,position,bgColor){
+            var div = document.createElement("div");
+            div.style.width = width+"px";
+            div.style.height = height+"px";
+            if(position){
+                div.style.position = position;
+                div.style.left = x+"px";
+                div.style.top = y+"px";
+            }
+            div.style.backgroundColor= bgColor;
+            return div;
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
